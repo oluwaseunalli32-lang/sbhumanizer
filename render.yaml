@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: humanizer-bot
     env: python
     buildCommand: pip install -r requirements.txt
@@ -9,4 +9,4 @@ services:
         sync: false
       - key: OPENAI_API_KEY
         sync: false
-    plan: free
+    plan: starter
